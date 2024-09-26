@@ -1,0 +1,19 @@
+html,
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+}
+
+canvas {
+  display: block;
+}
+
+.textArea {
+  flex: 1;
+}

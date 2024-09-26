@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sketch</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <script src="./Perceptron.js"></script>
+    <script src="./TrainingData.js"></script>
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+    <div id="canvasArea"></div>
+    <form>
+      <label for="slope">Target slope:</label>
+      <input type="range" id="slope" min="-10" max="10" value="0" />
+      <label for="intercept">Target intercept:</label>
+      <input type="range" id="intercept" min="-10" max="10" value="0" />
+      <label for="scramble">Scramble weights:</label>
+      <button type="button" id="scramble">Lobotomize</button>
+    </form>
+    <div class="textArea">
+      <p>
+        This program is built using p5js and displays the functional training of
+        a Perceptron, the basic building block of Universal Function
+        Approximators and a key component in machine learning models.
+        <br /><br />
+        The program represented above is designed to guess whether or not a each
+        of a set of points are above or below the line, and uses a form of
+        supervised learning to correct for the error between the guess and the
+        known coordinates to approximate the equation of the line.
+        <br /><br />
+        The correct line equation is displayed by the thin black line, while the
+        Perceptrons guess at the correct equation is displayed in blue.
+      </p>
+    </div>
+  </body>
+</html>
