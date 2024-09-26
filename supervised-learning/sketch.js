@@ -18,8 +18,6 @@ function setup() {
   targetSeparator = new TargetSeparator();
   trainingData = new TrainingData(targetSeparator);
 
-  frameRate(10);
-
   const scrambleButton = document.getElementById("scramble");
   scrambleButton.addEventListener("click", (e) => {
     e.preventDefault();

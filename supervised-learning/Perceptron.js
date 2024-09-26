@@ -1,6 +1,6 @@
 class Perceptron {
   weights = [];
-  learningRate = 0.001;
+  learningRate = 0.0001;
 
   constructor(numOfWeights) {
     for (let i = 0; i < numOfWeights; i++) {
